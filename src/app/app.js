@@ -12,4 +12,4 @@ export default class App extends preact.Component {
 }
 
 
-preact.render(<App/>, document.body);
+preact.render(<App/>, document.body, document.getElementById('app'));
