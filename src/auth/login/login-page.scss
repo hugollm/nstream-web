@@ -1,0 +1,29 @@
+#login-page {
+
+    width: 320px;
+    margin: auto;
+    margin-top: calc(15vh);
+    text-align: center;
+
+    .brand {
+        height: 84px;
+        font-size: 5em;
+        font-family: 'Dancing Script', sans-serif;
+        opacity: 0.1;
+    }
+
+    .lead {
+        margin-top: 5px;
+        font-family: times, serif;
+        opacity: 0.6;
+    }
+
+    .links {
+        margin-top: 10px;
+        text-align: right;
+        a {
+            color: #99f;
+            cursor: pointer;
+        }
+    }
+}

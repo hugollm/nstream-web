@@ -20,9 +20,6 @@ export default class App extends preact.Component {
         return <div id="app">
             <LoginPage/>
             <SignupPage/>
-            <hr/>
-            <button onClick={() => changePage('/')}>Login</button>
-            <button onClick={() => changePage('/signup')}>Signup</button>
         </div>;
     }
 }
