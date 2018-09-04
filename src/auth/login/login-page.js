@@ -23,7 +23,7 @@ export default class LoginPage extends preact.Component {
             </div>
             <LoginForm/>
             <div className="links">
-                <a onClick={() => changePage('/signup')}>• Signup</a>
+                <button className="btn-link" onClick={() => changePage('/signup')}>• Signup</button>
             </div>
         </Page>;
     }

@@ -36,9 +36,17 @@ button {
     border-radius: 2px;
     &:focus {
         outline: 0;
-        // border-left: 2px solid transparent;
         border-right: 2px solid $c1;
         padding-left: 6px;
+    }
+    &.btn-link {
+        border: 0;
+        background-color: transparent;
+        color: transparentize(saturate($c2, 40%), 0.3);
+        &:hover, &:focus {
+            padding-left: 5px;
+            text-decoration: underline;
+        }
     }
 }
 
