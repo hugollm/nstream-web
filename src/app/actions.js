@@ -4,6 +4,13 @@ import store from './store';
 export function changePage(path) {
     history.pushState(null, null, path);
     store.set('page.path', path);
+    triggerAutoFocus();
+}
+
+function triggerAutoFocus() {
+    setTimeout(() => {
+        document.querySelector('[autofocus]').focus();
+    });
 }
 
 export function pageMatch(path) {
