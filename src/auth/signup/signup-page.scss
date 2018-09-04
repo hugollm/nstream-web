@@ -16,9 +16,11 @@
     }
 
     .lead {
-        margin-top: 5px;
         font-family: times, serif;
-        color: transparentize($c1, 0.2);
+        color: transparentize($c1, 0.5);
+        h2 {
+            margin-bottom: 5px;
+        }
     }
 
     .links {

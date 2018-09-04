@@ -16,7 +16,10 @@ export default class LoginPage extends preact.Component {
                 Note Stream
             </div>
             <div className="lead">
-                Don't write to remember... write to forget.
+                <h2>LOG IN</h2>
+                <div>
+                    Don't write to remember. Write to forget.
+                </div>
             </div>
             <LoginForm/>
             <div className="links">

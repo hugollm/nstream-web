@@ -15,7 +15,10 @@ export default class SignupPage extends preact.Component {
                 Note Stream
             </div>
             <div className="lead">
-                Don't write to remember... write to forget.
+                <h2>SIGN UP</h2>
+                <div>
+                    Just a quick form. You can do this :)
+                </div>
             </div>
             <SignupForm/>
             <div className="links">
