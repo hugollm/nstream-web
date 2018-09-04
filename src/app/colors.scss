@@ -1,0 +1,17 @@
+$c1: #847967;
+$c2: #5a7284;
+
+$c-selection: transparentize(saturate($c2, 50%), 0.8);
+$c-focus: $c1;
+
+$c-input-bg: transparentize($c1, 0.98);
+$c-input-border: transparentize($c1, 0.8);
+$c-input-placeholder: transparentize($c1, 0.4);
+
+$c-btn-bg: transparentize($c1, 0.8);
+$c-btn-border: transparentize($c1, 0.8);
+
+$c-link: transparentize(saturate($c2, 40%), 0.3);
+
+$c-brand: $c1;
+$c-text-muted: transparentize($c1, 0.5);

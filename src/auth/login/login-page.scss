@@ -1,4 +1,4 @@
-@import '/app/globals';
+@import '/app/colors';
 
 #login-page {
 
@@ -11,13 +11,13 @@
         height: 84px;
         font-size: 5em;
         font-family: 'Dancing Script', sans-serif;
-        color: $c1;
+        color: $c-brand;
         overflow: hidden;
     }
 
     .lead {
         font-family: times, serif;
-        color: transparentize($c1, 0.5);
+        color: $c-text-muted;
         h2 {
             margin-bottom: 5px;
         }
@@ -26,8 +26,5 @@
     .links {
         margin-top: 5px;
         text-align: left;
-        a {
-            color: transparentize(saturate($c2, 30%), 0.4);
-        }
     }
 }

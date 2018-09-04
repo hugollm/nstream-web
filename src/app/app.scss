@@ -1,4 +1,4 @@
-@import './globals';
+@import './colors';
 
 body {
     margin: 0;
@@ -8,52 +8,44 @@ body {
 }
 
 ::selection {
-    background: transparentize(saturate($c2, 50%), 0.8);
+    background: $c-selection;
 }
 
 input {
     color: $c1;
-    background-color: transparentize($c1, 0.98);
-    border: 1px solid transparentize($c1, 0.8);
+    background-color: $c-input-bg;
+    border: 1px solid $c-input-border;
     padding: 5px;
     border-radius: 2px;
     &:focus {
         outline: 0;
-        border-right: 2px solid $c1;
+        border-right: 2px solid $c-focus;
     }
     &::placeholder {
         padding-left: 3px;
-        color: transparentize($c1, 0.4);
+        color: $c-input-placeholder;
     }
 }
 
 button {
     cursor: pointer;
     color: $c1;
-    background-color: transparentize($c1, 0.8);
-    border: 1px solid transparentize($c1, 0.8);
+    background-color: $c-btn-bg;
+    border: 1px solid $c-btn-border;
     padding: 5px;
     border-radius: 2px;
     &:focus {
         outline: 0;
-        border-right: 2px solid $c1;
+        border-right: 2px solid $c-focus;
         padding-left: 6px;
     }
     &.btn-link {
         border: 0;
         background-color: transparent;
-        color: transparentize(saturate($c2, 40%), 0.3);
+        color: $c-link;
         &:hover, &:focus {
             padding-left: 5px;
             text-decoration: underline;
         }
-    }
-}
-
-a {
-    color: transparentize(saturate($c2, 40%), 0.3);
-    cursor: pointer;
-    &:hover {
-        text-decoration: underline;
     }
 }
