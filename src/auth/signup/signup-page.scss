@@ -1,0 +1,31 @@
+@import '/app/globals';
+
+#signup-page {
+
+    width: 320px;
+    margin: auto;
+    margin-top: calc(15vh);
+    text-align: center;
+
+    .brand {
+        height: 84px;
+        font-size: 5em;
+        font-family: 'Dancing Script', sans-serif;
+        color: $c1;
+        overflow: hidden;
+    }
+
+    .lead {
+        margin-top: 5px;
+        font-family: times, serif;
+        color: transparentize($c1, 0.2);
+    }
+
+    .links {
+        margin-top: 10px;
+        text-align: left;
+        a {
+            color: transparentize(saturate($c2, 30%), 0.4);
+        }
+    }
+}
