@@ -1,5 +1,51 @@
+@import './globals';
+
 body {
     margin: 0;
     font-family: arial, sans-serif;
     font-size: 14px;
+    color: $c1;
+}
+
+::selection {
+    background: transparentize(saturate($c2, 50%), 0.8);
+}
+
+input {
+    color: $c1;
+    background-color: transparentize($c1, 0.98);
+    border: 1px solid transparentize($c1, 0.8);
+    padding: 5px;
+    border-radius: 2px;
+    &:focus {
+        outline: 0;
+        border-right: 2px solid $c1;
+    }
+    &::placeholder {
+        padding-left: 3px;
+        color: transparentize($c1, 0.4);
+    }
+}
+
+button {
+    cursor: pointer;
+    color: $c1;
+    background-color: transparentize($c1, 0.8);
+    border: 1px solid transparentize($c1, 0.8);
+    padding: 5px;
+    border-radius: 2px;
+    &:focus {
+        outline: 0;
+        // border-left: 2px solid transparent;
+        border-right: 2px solid $c1;
+        padding-left: 6px;
+    }
+}
+
+a {
+    color: transparentize(saturate($c2, 40%), 0.3);
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
 }

@@ -8,7 +8,7 @@ export default class LoginForm extends preact.Component {
         return <form onSubmit={e => e.preventDefault()}>
             <input type="email" placeholder="Email" spellCheck="false" autoFocus/>
             <input type="password" placeholder="Password"/>
-            <button type="submit">Login</button>
+            <button type="submit">Log In</button>
         </form>;
     }
 }
